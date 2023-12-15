@@ -1,0 +1,24 @@
+{
+  "name": "rplayer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ratchet205/RPlayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ratchet205/RPlayer/issues"
+  },
+  "homepage": "https://github.com/Ratchet205/RPlayer#readme",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}
