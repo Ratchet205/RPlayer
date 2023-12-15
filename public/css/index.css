@@ -1,0 +1,79 @@
+:root {
+    --top_bg : #1a1a1a;
+    --bg : #1f1f1f;
+    --fg : #bfbfbf;
+    --dark_red : #5b0000;
+    --top_bar_height: 5vw;
+    --nav_bar_width: 8vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--fg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: var(--top_bar_height) calc(100% - var(--top_bar_height));
+    grid-template-areas:
+    "top-bar"
+    "mainBody"
+    ;
+}
+
+#top-bar {
+    z-index: 1;
+    grid-area: top-bar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--top_bg);
+    width: 100%;
+    height: 100%;
+    font-size: 1.8vw;
+    text-shadow: 0px 0px 27px var(--dark_red);
+    text-decoration: underline;
+}
+
+#mainBody {
+    z-index: 0;
+    grid-area: mainBody;
+    display: grid;
+    grid-template-columns: var(--nav_bar_width) calc(100% - var(--nav_bar_width));
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "nav-bar main"
+    ;
+    background-color: var(--bg);
+    width: 100%;
+    height: 100%;
+}
+
+#nav-bar {
+    grid-area: nav-bar;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 20px 20px 9px -20px var(--dark_red);
+}
+
+
+/*
+A 128x128 px icon for an application called RPlayer, specifically designed for roleplayers seeking a platform to engage in text-based roleplaying experiences. The background color is a muted gray, set at #1a1a1a, which provides a subtle backdrop for the minimalist design. In the foreground, a silhouette of a person can be seen, their figure outlined in a darker shade of gray, #1f1f1f. The outline is intentionally vague, allowing viewers to envision themselves or their ideal roleplaying character within the silhouette. The accent color, #5b0000, is used sparingly but effectively, appearing as a faint glow emanating from the figure's hands, which are positioned in a gesture of narration or storytelling. The overall effect of the image is one of simplicity and subtlety, hinting at the potential for erotic and intimate roleplaying experiences within the RPlayer application.
+*/
