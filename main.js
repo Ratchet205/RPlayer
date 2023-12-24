@@ -25,6 +25,15 @@ function createWindow() {
           }
         }
       });
+
+    win.loadFile('public/index.html')
+    globalShortcut.register('CommandOrControl+Shift+Q', () => {
+        if (win) {
+          if (win.isVisible()) {
+            app.exit();
+          }
+        }
+      });
 }
 app.whenReady().then(createWindow);
 
