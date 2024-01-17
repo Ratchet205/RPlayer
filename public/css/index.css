@@ -1,11 +1,19 @@
 :root {
-    --top_bg : #1a1a1a;
-    --bg : #1f1f1f;
-    --fg : #bfbfbf;
-    --dark_red : #5b0000;
+    --top_bg : #0c0c0c;
+    --bg : #0f0f0f;
+    --fg : #4e4e4e;
+    --dark_red : #4e4e4e;
     --top_bar_height: 5vw;
     --nav_bar_width: 8vw;
 }
+
+/*
+    Light Beige: #F5F5DC
+    Old Paper Beige: #FFE4B5
+    Dark Beige: #D2B48C
+    Deep Beige: #BC8F8F
+    Rich Brown: #8B4513
+*/
 
 * {
     padding: 0;
@@ -55,7 +63,6 @@ body {
     grid-template-areas:
     "nav-bar main"
     ;
-    background-color: var(--bg);
     width: 100%;
     height: 100%;
 }
@@ -64,6 +71,7 @@ body {
     grid-area: nav-bar;
     width: 100%;
     height: 100%;
+    background-color: var(--top_bg);
 }
 
 #main {
@@ -71,9 +79,5 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: inset 20px 20px 9px -20px var(--dark_red);
+    background-color: var(--bg);
 }
-
-
-/*
-A 128x128 px icon for an application called RPlayer, specifically designed for roleplayers seeking a platform to engage in text-based roleplaying experiences. The background color is a muted gray, set at #1a1a1a, which provides a subtle backdrop for the minimalist design. In the foreground, a silhouette of a person can be seen, their figure outlined in a darker shade of gray, #1f1f1f. The outline is intentionally vague, allowing viewers to envision themselves or their ideal roleplaying character within the silhouette. The accent color, #5b0000, is used sparingly but effectively, appearing as a faint glow emanating from the figure's hands, which are positioned in a gesture of narration or storytelling. The overall effect of the image is one of simplicity and subtlety, hinting at the potential for erotic and intimate roleplaying experiences within the RPlayer application.
-*/
