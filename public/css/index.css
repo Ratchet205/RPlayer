@@ -1,18 +1,33 @@
 * {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     color: white;
     transition: 0.4s;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px calc(100% - 70px);
+    grid-template-areas:
+    "nav-bar"
+    "body"
+    ;
+    height: 100%;
+    width: 100%;
 }
 
 nav {
+    grid-area: nav-bar;
     background-color: #303030;
     width: 100%;
-    height: 70px;
+    height: 100%;
     display: flex;
     justify-content: right;
 }
@@ -29,13 +44,33 @@ nav ul li {
     display: flex;
     align-items: center;
     height: calc(100% - 24px);
+    width: 120px;
     padding: 12px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
 }
 
 nav ul li span {
     background-color: transparent;
+    width: 100%;
+    text-align: center;
+    align-items: center;
 }
 
 nav ul li:hover {
     background-color: #3b3b3b;
+}
+
+#maincontent {
+    grid-area: body;
+    height: 100%;
+    width: 100%;
+}
+
+#maincontentFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
 }
